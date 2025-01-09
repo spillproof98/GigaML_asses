@@ -1,0 +1,5 @@
+pip install gevent
+pip install flask-cors
+flask
+flask-socketio
+eventlet

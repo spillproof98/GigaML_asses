@@ -3,12 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Pong.css">
-    <title>Multiplayer Ping Pong</title>
+    <title>Ping Pong Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <canvas id="gameCanvas" width="500" height="500"></canvas>
-    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
-    <script src="app.js"></script>
+<body class="dark-background">
+
+    <!-- Menu Screen -->
+    <div id="menu-screen" class="screen">
+        <h1 class="title">Ping Pong Game</h1>
+        <div class="buttons">
+            <button id="player-vs-ai" class="menu-button" onclick="startGame('ai')">Player vs AI</button>
+            <button id="player-vs-player" class="menu-button" onclick="startGame('player')">Player vs Player</button>
+        </div>
+        <div class="dropdown-container">
+            <label for="difficulty" class="dropdown-label">Select Difficulty:</label>
+            <select id="difficulty" class="dropdown">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen hidden">
+        <canvas id="gameCanvas"></canvas>
+        <div class="scoreboard">
+            <span id="player1-score">Player 1: 0</span>
+            <span id="player2-score">Player 2: 0</span>
+        </div>
+        <button id="back-button" class="menu-button" onclick="goBack()">Back to Menu</button>
+    </div>
+
+    <script src="game.jsx"></script>
 </body>
 </html>

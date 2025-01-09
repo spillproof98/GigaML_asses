@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+
+.dark-background {
+  background-color: #1a1a1a;
+}
+
+.screen {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.screen.active {
+  display: flex;
+}
+
+.title {
+  font-size: 3em;
+  color: orange;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu-button {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  margin: 10px;
+  color: white;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  background-color: #ff7700;
+}
+
+.dropdown-container {
+  margin-top: 20px;
+}
+
+.dropdown-label {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.dropdown {
+  font-size: 1.2em;
+  padding: 5px 10px;
+}
+
+canvas {
+  background-color: black;
+  border: 2px solid white;
+}
+
+.scoreboard {
+  margin: 20px;
+  font-size: 1.5em;
+}
