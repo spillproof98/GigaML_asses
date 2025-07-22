@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-# GigaML Assessment - Multiplayer Ping Pong Game
 
 ## Description
 This is a real-time multiplayer Ping Pong game built using Flask-SocketIO for the backend and HTML5 Canvas for the frontend. Players can connect in different browser tabs and compete in real-time with dynamic obstacles and a scoring system.
